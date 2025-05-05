@@ -8,3 +8,34 @@
     height: 100vh;
     width: 100vw;
 }
+
+.flex-container {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+#nav-bar {
+    justify-content: space-around;
+    border: 1px solid white;
+    padding: 1.5rem;
+
+}
+
+.site-nav-container {
+    justify-content: space-around;
+    border: 1px solid red;
+    min-width: 40%;
+}
+
+.site-nav-container > a {
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  color: #D0D2D3;
+}
