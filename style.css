@@ -5,7 +5,8 @@
 
 #home {
     background: #27272a;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;   
     width: 100vw;
 }
 
@@ -91,4 +92,33 @@
 #resume-download:hover::before,
 #toggle-mode:hover::before {
   transform: scaleX(1); /* Expands left to right */
+}
+
+#name-wrapper > div {
+    color: #C4C5C9;
+    font-family: "Inter", sans-serif;
+    font-size: 12rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+#name-wrapper {
+    padding: 2rem;
+    align-items: center;
+}
+
+#last-name {
+    align-self: flex-end;
+}
+
+#first-name {
+    align-self: flex-start;
+}
+
+#first-name,
+#last-name {
+  display: inline-block;   
+  line-height: 1; 
 }
