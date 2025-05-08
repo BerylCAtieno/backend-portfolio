@@ -4,7 +4,7 @@
 }
 
 #home {
-    background: #1E1D23;
+    background: #27272a;
     height: 100vh;
     width: 100vw;
 }
@@ -18,24 +18,77 @@
 }
 
 #nav-bar {
-    justify-content: space-around;
-    border: 1px solid white;
-    padding: 1.5rem;
+    justify-content: space-between;
+    padding: 2.5rem;
 
 }
 
 .site-nav-container {
     justify-content: space-around;
-    border: 1px solid red;
-    min-width: 40%;
+    min-width: 35%;
 }
 
 .site-nav-container > a {
     text-decoration: none;
-    font-family: "Playfair Display", serif;
+    font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
-  color: #D0D2D3;
+  font-size: 0.98rem;
+  color: #C4C5C9;
+  line-height: 160%;
+  
+  text-shadow: 0 0 1px currentColor;
+}
+
+.info-nav-container {
+    min-width: 60%;
+    justify-content: space-around;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    text-shadow: 0 0 1px currentColor;
+    font-weight: 300;
+}
+
+.info-nav-container > div {
+    color: #C4C5C9;
+}
+
+#resume-download,
+#toggle-mode {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  padding-bottom: 5px; /* Keeps space for the line */
+}
+
+#resume-download::after,
+#toggle-mode::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: grey; /* Always visible base line */
+}
+
+#resume-download::before,
+#toggle-mode::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #C4C5C9;
+  transform: scaleX(0); /* Hidden initially */
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+  pointer-events: none; /* Ensures it doesn't interfere with clicks */
+}
+
+#resume-download:hover::before,
+#toggle-mode:hover::before {
+  transform: scaleX(1); /* Expands left to right */
 }
