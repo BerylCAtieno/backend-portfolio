@@ -107,7 +107,7 @@
 #name-wrapper {
     padding: 2rem;
     align-items: center;
-    gap: 20%;
+    gap: 4rem;
 }
 
 #last-name {
@@ -128,7 +128,7 @@
     color: #969696;
     font-family: "Inter", sans-serif;
     font-size: 1.3rem;
-    max-width: 40%;
+    max-width: 50%;
     margin-left: 5%;
     font-weight: 500;
     line-height: 1.8;
