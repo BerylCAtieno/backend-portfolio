@@ -141,14 +141,14 @@ section {
     padding-top: 5%;
 }
 
-.about-title-wrapper > h1 {
+.section-title > h1 {
     color: #C4C5C9;
     font-family: "Inter", sans-serif;
     font-size: 4.5rem;
     font-weight: 500;
 }
 
-.about-title-wrapper {
+.section-title {
     padding-left: 5%;
 }
 
