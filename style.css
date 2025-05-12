@@ -210,3 +210,34 @@ section {
 .about-links > div {
     max-height: 2rem;
 }
+
+.company-title > h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    color: #C4C5C9;
+    font-weight: 500;
+}
+
+.experience-content-wrapper {
+    padding-top: 5%;
+}
+
+.company-description {
+    color: #C4C5C9;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+}
+
+.company-info {
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2%;
+}
+
+.company-info:last-child {
+    font-weight: 500;
+}
+
+.main-experience-info {
+    justify-content: space-between;
+}
