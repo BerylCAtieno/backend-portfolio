@@ -60,16 +60,14 @@ section {
     color: #C4C5C9;
 }
 
-#resume-download,
-#toggle-mode, .nav-menu {
+.underline {
   position: relative;
   cursor: pointer;
   overflow: hidden;
   padding-bottom: 5px; /* Keeps space for the line */
 }
 
-#resume-download::after,
-#toggle-mode::after, .nav-menu::after {
+.underline::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -79,8 +77,7 @@ section {
   background: grey; /* Always visible base line */
 }
 
-#resume-download::before,
-#toggle-mode::before, .nav-menu::before {
+.underline::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -94,8 +91,7 @@ section {
   pointer-events: none; /* Ensures it doesn't interfere with clicks */
 }
 
-#resume-download:hover::before,
-#toggle-mode:hover::before, .nav-menu::before {
+.underline::before {
   transform: scaleX(1); /* Expands left to right */
 }
 
@@ -166,6 +162,7 @@ section {
     color: #C4C5C9;
     font-family: "Inter", sans-serif;
     font-size: 2rem;
+    line-height: 160%;
 }
 
 .right-info > p {
@@ -183,6 +180,7 @@ section {
 
 .left-info {
     max-width: 55%;
+    justify-content: space-between;
 }
 
 .about-info-wrapper {
@@ -191,4 +189,24 @@ section {
     margin-right: 5%;
     padding-bottom: 5%;
     gap: 5%
+}
+
+.about-nav > span {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.98rem;
+  color: #C4C5C9;
+  line-height: 160%;
+}
+
+.about-links {
+    justify-content: flex-start;
+    gap: 4rem;
+}
+
+.about-links > div {
+    max-height: 2rem;
 }
