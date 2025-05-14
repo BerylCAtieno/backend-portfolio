@@ -240,6 +240,10 @@ section {
     font-weight: 500;
 }
 
+#experience {
+    padding-bottom: 5%;
+}
+
 .main-experience-info {
     justify-content: flex-start;
     gap: 10%;
