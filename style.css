@@ -12,7 +12,7 @@ section {
     background: #27272a;
     min-height: 100vh;
     height: auto; 
-    width: 100%;  
+    width: 100%;
 }
 
 .flex-container {
@@ -220,6 +220,7 @@ section {
 
 .experience-content-wrapper {
     padding-top: 5%;
+    padding-left: 5%;
 }
 
 .company-description {
@@ -242,8 +243,8 @@ section {
 .main-experience-info {
     justify-content: flex-start;
     gap: 10%;
-    padding-top: 2%;
-    padding-bottom: 10%;
+    margin-top: 2%;
+    padding-bottom: 5%;
 }
 
 table {
