@@ -249,6 +249,7 @@ section {
     gap: 10%;
     margin-top: 2%;
     padding-bottom: 5%;
+    padding-right: 5%;
 }
 
 table {
@@ -282,4 +283,44 @@ td:nth-child(2) {
 
 .experience-description {
     max-width: 40%;
+}
+
+#contact {
+    background: #27272a;
+    height: auto;
+}
+
+.footer-content-main-wrapper {
+    padding: 5%;
+    gap: 7rem;
+}
+
+.footer-content-main-wrapper > * {
+    font-family: "Inter", sans-serif;
+    color: #C4C5C9;
+}
+
+.contact-info {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collaborate-title {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.email-link {
+    font-size: 2.5rem;
+    font-weight: 600;
+    align-self: center;
+    line-height: 150%;
+}
+
+.footer-links-wrapper {
+    justify-content: space-between;
+}
+
+.external-links {
+    gap: 2rem;
 }
