@@ -324,3 +324,37 @@ td:nth-child(2) {
 .external-links {
     gap: 2rem;
 }
+
+.main-project-wrapper {
+    padding-top: 2%;
+}
+
+.info-side {
+    max-width: 30%;
+    gap: 1.5rem;
+}
+
+.info-side > * {
+    font-family: "Inter", sans-serif;
+    color: #C4C5C9;
+}
+
+.project-title {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.project-key-words {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #969696;
+}
+
+.project-links {
+    gap: 10%;
+    justify-self: flex-end;
+}
