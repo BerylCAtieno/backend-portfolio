@@ -303,6 +303,7 @@ td:nth-child(2) {
 .contact-info {
     justify-content: space-between;
     align-items: center;
+    padding-top: 10%;
 }
 
 .collaborate-title {
@@ -326,7 +327,14 @@ td:nth-child(2) {
 }
 
 .main-project-wrapper {
-    padding-top: 2%;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    justify-content: space-between;
+}
+
+.main-project-wrapper.flipped {
+  flex-direction: row-reverse;
 }
 
 .info-side {
@@ -357,4 +365,19 @@ td:nth-child(2) {
 .project-links {
     gap: 10%;
     justify-self: flex-end;
+}
+
+.image-background {
+    background-color: black;
+    height: 27rem;
+    width: 50vw;
+}
+
+.pagination-indicator {
+    width: 2rem;
+    color: #C4C5C9;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    font-size: 1rem;
+     font-family: "Inter", sans-serif;
 }
