@@ -420,6 +420,10 @@ td:nth-child(2) {
     gap: 2rem;
   }
 
+  .footer-content-main-wrapper {
+    gap: 6rem !important;
+  }
+
   .left-info,
   .right-info,
   .info-side,
@@ -437,11 +441,12 @@ td:nth-child(2) {
   }
 
   .collaborate-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .email-link {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    align-self: flex-start;
   }
 
   .footer-links-wrapper,
@@ -452,9 +457,11 @@ td:nth-child(2) {
     gap: 1.5rem;
   }
 
-  .footer-content-main-wrapper > * {
-    border: 1px solid white;
+  .footer-links-wrapper {
+    flex-direction: column-reverse !important;
+
   }
+
 
   .image-background {
   width: 100%;
