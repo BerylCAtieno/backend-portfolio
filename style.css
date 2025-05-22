@@ -381,3 +381,84 @@ td:nth-child(2) {
     font-size: 1rem;
      font-family: "Inter", sans-serif;
 }
+
+/* Mobile Devices (≤768px) */
+@media (max-width: 768px) {
+
+  #nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .info-nav-container,
+  .site-nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 100%;
+    gap: 0.5rem;
+  }
+
+  #name-wrapper > div {
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  #short-description {
+    max-width: 90%;
+    font-size: 1rem;
+    margin-left: 5%;
+  }
+
+  .about-info-wrapper,
+  .main-experience-info,
+  .footer-content-main-wrapper,
+  .main-project-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .left-info,
+  .right-info,
+  .info-side,
+  .experience-description {
+    max-width: 100%;
+  }
+
+  .image-background {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .collaborate-title {
+    font-size: 2rem;
+  }
+
+  .email-link {
+    font-size: 1rem;
+  }
+
+  .footer-links-wrapper,
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .footer-content-main-wrapper > * {
+    border: 1px solid white;
+  }
+
+  .image-background {
+  width: 100%;
+  max-width: 600px;
+}
+
+}
