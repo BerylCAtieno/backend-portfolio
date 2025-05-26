@@ -468,4 +468,12 @@ td:nth-child(2) {
   max-width: 600px;
 }
 
+.section-title > h1 {
+    font-size: 2rem;
+}
+
+.short-experience-description {
+    font-size: 1.35rem;
+}
+
 }
