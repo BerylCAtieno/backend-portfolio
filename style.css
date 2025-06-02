@@ -477,3 +477,165 @@ td:nth-child(2) {
 }
 
 }
+
+/* Mobile Menu Styles */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: #C4C5C9;
+            font-family: "Inter", sans-serif;
+            font-size: 0.98rem;
+            font-weight: 400;
+            cursor: pointer;
+            text-shadow: 0 0 1px currentColor;
+        }
+
+        .mobile-sidebar {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background-color: #27272a;
+            z-index: 1000;
+            transition: right 0.3s ease;
+            padding: 2.5rem;
+        }
+
+        .mobile-sidebar.active {
+            right: 0;
+        }
+
+        .mobile-sidebar-header {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 4rem;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: #C4C5C9;
+            font-family: "Inter", sans-serif;
+            font-size: 0.98rem;
+            font-weight: 400;
+            cursor: pointer;
+            text-shadow: 0 0 1px currentColor;
+        }
+
+        .mobile-nav-content {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .mobile-nav-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .mobile-nav-section a {
+            color: #C4C5C9;
+            text-decoration: none;
+            font-family: "Inter", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0.5rem 0;
+            transition: opacity 0.3s ease;
+            text-shadow: 0 0 1px currentColor;
+        }
+
+        .mobile-nav-section a:hover {
+            opacity: 0.7;
+        }
+
+        .mobile-info-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .mobile-info-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-family: "Inter", sans-serif;
+            color: #C4C5C9;
+            font-weight: 300;
+        }
+
+        .mobile-info-item span:first-child {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        .mobile-info-item span:last-child {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .underline-mobile {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Mobile Devices (≤768px) */
+        @media (max-width: 768px) {
+            #nav-bar {
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 1.5rem;
+            }
+
+            .info-nav-container,
+            .site-nav-container {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            #name-wrapper > div {
+                font-size: 4rem;
+                text-align: left;
+            }
+
+            #short-description {
+                max-width: 90%;
+                font-size: 1rem;
+                margin-left: 5%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #name-wrapper > div {
+                font-size: 3rem;
+            }
+
+            #short-description {
+                font-size: 0.9rem;
+            }
+        }
