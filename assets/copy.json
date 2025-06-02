@@ -1,0 +1,26 @@
+{
+    "header": "Welcome to My Portfolio",
+    "subtitle": "Showcasing my projects and skills",
+    "aboutSection": {
+        "title": "About Me",
+        "content": "I am a passionate developer with experience in building web applications. I love solving problems and learning new technologies."
+    },
+    "projectsSection": {
+        "title": "Projects",
+        "projects": [
+            {
+                "name": "Project One",
+                "description": "A web application that helps users manage tasks efficiently."
+            },
+            {
+                "name": "Project Two",
+                "description": "A mobile app for tracking fitness activities and goals."
+            }
+        ]
+    },
+    "contactSection": {
+        "title": "Contact",
+        "content": "Feel free to reach out to me via email or through my social media profiles."
+    },
+    "footer": "© 2024 My Portfolio. All rights reserved."
+}
