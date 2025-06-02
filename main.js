@@ -1,3 +1,5 @@
+// flip every second project item
+
 const projects = document.querySelectorAll('.main-project-wrapper');
 
 projects.forEach((project, index) => {
