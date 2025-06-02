@@ -386,11 +386,11 @@ td:nth-child(2) {
 @media (max-width: 768px) {
 
   #nav-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.5rem;
-    gap: 1rem;
-  }
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.5rem;
+            }
 
   .info-nav-container,
   .site-nav-container {
@@ -479,6 +479,30 @@ td:nth-child(2) {
 }
 
 /* Mobile Menu Styles */
+
+.mobile-nav {
+    display: none; /* Hidden by default, shown only on mobile */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+
+}
+
+.mobile-location {
+            display: none;
+            flex-direction: column;
+            font-family: "Inter", sans-serif;
+            color: #C4C5C9;
+            font-weight: 300;
+            font-size: 16px;
+            text-shadow: 0 0 1px currentColor;
+            
+        }
+
+        .mobile-location span:first-child {
+            opacity: 0.8;
+        }
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -603,19 +627,31 @@ td:nth-child(2) {
         /* Mobile Devices (≤768px) */
         @media (max-width: 768px) {
             #nav-bar {
-                flex-direction: row;
-                justify-content: flex-end;
-                align-items: center;
-                padding: 1.5rem;
-            }
+        display: none; /* Hide the main nav bar on mobile */
+    }
+    
+    .mobile-nav {
+        display: flex; /* Show mobile nav on mobile devices */
+    }
+
+    .mobile-location {
+        display: flex; /* This was already set but keeping for clarity */
+        flex-direction: column;
+        font-family: "Inter", sans-serif;
+        color: #C4C5C9;
+        font-weight: 300;
+        font-size: 16px;
+        text-shadow: 0 0 1px currentColor;
+    }
 
             .info-nav-container,
             .site-nav-container {
                 display: none;
             }
 
-            .mobile-menu-btn {
-                display: block;
+           .mobile-menu-btn,
+            .mobile-location {
+                display: flex;
             }
 
             #name-wrapper > div {
@@ -628,6 +664,18 @@ td:nth-child(2) {
                 font-size: 1rem;
                 margin-left: 5%;
             }
+
+            .mobile-menu-btn {
+        display: block; /* Show the menu button */
+        background: none;
+        border: none;
+        color: #C4C5C9;
+        font-family: "Inter", sans-serif;
+        font-size: 0.98rem;
+        font-weight: 400;
+        cursor: pointer;
+        text-shadow: 0 0 1px currentColor;
+    }
         }
 
         @media (max-width: 480px) {
