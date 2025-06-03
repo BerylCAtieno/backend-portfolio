@@ -686,9 +686,10 @@ td:nth-child(2) {
 
         @media (max-width: 480px) {
             #name-wrapper > div {
-                font-size: 4rem;
+                font-size: 4.2rem;
             }
 
+            
             #short-description {
                 font-size: 1rem;
             }
