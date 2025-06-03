@@ -382,6 +382,12 @@ td:nth-child(2) {
      font-family: "Inter", sans-serif;
 }
 
+.mobile-about-links{
+    display: none;
+}
+
+
+
 /* Mobile Devices (≤768px) */
 @media (max-width: 768px) {
 
@@ -689,7 +695,29 @@ td:nth-child(2) {
         cursor: pointer;
         text-shadow: 0 0 1px currentColor;
     }
-        }
+    
+    .about-links {
+        display: none;
+    }
+
+    .mobile-about-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+        font-weight: 400;
+    }
+
+    .mobile-about-nav-links-wrapper {
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .mobile-about-links > div > span {
+    font-size: 1rem;
+}
+}
 
         @media (max-width: 480px) {
             #name-wrapper > div {
