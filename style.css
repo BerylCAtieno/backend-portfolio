@@ -656,8 +656,8 @@ td:nth-child(2) {
 
             #name-wrapper {
                 gap: 2rem;
-                padding-top: 6rem;
-                padding-bottom: 6rem;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
             }
 
             #name-wrapper > div {
@@ -690,6 +690,6 @@ td:nth-child(2) {
             }
 
             #short-description {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
         }
