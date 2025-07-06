@@ -169,7 +169,7 @@ section {
     color: #969696;
     font-family: "Inter", sans-serif;
     font-size: 1em;
-    padding: 2%;
+    /* padding: 2%; */
     font-weight: 400;
     line-height: 150%;
 }
