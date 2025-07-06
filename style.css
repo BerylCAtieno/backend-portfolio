@@ -419,6 +419,10 @@ td:nth-child(2) {
         font-size: 1.6rem;
     }
 
+    td {
+        padding-left: 0;
+    }
+
     .experience-description > p {
         padding: 0;
     }
