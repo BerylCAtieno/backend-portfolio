@@ -391,6 +391,44 @@ td:nth-child(2) {
 /* Mobile Devices (≤768px) */
 @media (max-width: 768px) {
 
+    .main-experience-info {
+        flex-direction: column; /* Stacks children vertically on mobile */
+    }
+
+    .experience-details {
+        order: 3; /* Moves the table to the end */
+        width: 100%; /* Ensures the table takes full width on mobile */
+    }
+
+    .company-info {
+        order: 1; /* Keeps company info at the top */
+    }
+
+    .experience-description {
+        order: 2; /* Positions the description after company info */
+        max-width: 100%; /* Ensures description takes full width on mobile */
+        padding: 0; /* Remove horizontal padding if not desired for mobile */
+    }
+
+    /* Adjust padding for the experience content wrapper on mobile */
+    .experience-content-wrapper {
+        padding-right: 5%; /* Align with other mobile padding */
+    }
+
+    .company-title > h2 {
+        font-size: 1.6rem;
+    }
+
+    .experience-description > p {
+        padding: 0;
+    }
+
+    .experience-description {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
   #nav-bar {
                 flex-direction: row;
                 justify-content: space-between;
