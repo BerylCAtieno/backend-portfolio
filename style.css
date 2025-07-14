@@ -796,3 +796,172 @@ td:nth-child(2) {
                 font-size: 1rem;
             }
         }
+
+/* Mobile Projects Container - Hidden on desktop */
+#mobile-projects-container {
+    display: none;
+}
+
+/* Mobile Project Wrapper Styles */
+.mobile-project-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 5% 3rem 5%;
+    border-bottom: 1px solid #969696;
+    opacity: 0.6;
+}
+
+.mobile-project-wrapper:last-child {
+    border-bottom: none;
+}
+
+/* Mobile Project Title */
+.mobile-project-title {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #C4C5C9;
+    line-height: 1.2;
+}
+
+/* Mobile Project Keywords */
+.mobile-project-keywords {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #C4C5C9;
+    line-height: 1.4;
+}
+
+/* Mobile Project Year */
+.mobile-project-year {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #C4C5C9;
+    line-height: 1.4;
+}
+
+/* Mobile Image Background */
+.mobile-image-background {
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Mobile Pagination Container */
+.mobile-pagination-container {
+    padding: 1rem 0;
+}
+
+/* Mobile Pagination Indicator */
+.mobile-pagination-indicator {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #C4C5C9;
+    letter-spacing: 0.3rem;
+}
+
+/* Mobile Scroll Arrow Icons */
+.mobile-scroll-arrow-icons {
+    align-items: center;
+}
+
+.mobile-scroll-arrow-icons img {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-scroll-arrow-icons img:hover {
+    opacity: 0.7;
+}
+
+/* Mobile Project Description */
+.mobile-project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mobile-project-description p {
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #969696;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Mobile Project Links */
+.mobile-project-links {
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+.mobile-project-links .underline a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #C4C5C9;
+    line-height: 1.6;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mobile-project-links .underline a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    /* Hide desktop projects container */
+    #projects-container {
+        display: none;
+    }
+    
+    /* Show mobile projects container */
+    #mobile-projects-container {
+        display: block;
+        padding-top: 2rem;
+    }
+    
+    /* Adjust mobile project wrapper spacing */
+    .mobile-project-wrapper {
+        padding: 2rem 0 3rem 0;
+    }
+    
+    /* Responsive adjustments for very small screens */
+    @media (max-width: 480px) {
+        .mobile-project-title {
+            font-size: 1.3rem;
+        }
+        
+        .mobile-project-keywords,
+        .mobile-project-year {
+            font-size: 0.85rem;
+        }
+        
+        .mobile-image-background {
+            height: 180px;
+        }
+        
+        .mobile-project-description p {
+            font-size: 0.9rem;
+        }
+        
+        .mobile-project-links {
+            gap: 1.5rem;
+        }
+        
+        .mobile-project-links .underline a {
+            font-size: 0.9rem;
+        }
+    }
+}

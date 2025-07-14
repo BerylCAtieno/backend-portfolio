@@ -1,5 +1,3 @@
-
-
 // Mobile Menu for responsive layout
 
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -11,13 +9,13 @@ function openMobileMenu() {
     mobileSidebar.classList.add('active');
     overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
-  }
+}
 
 function closeMobileMenu() {
     mobileSidebar.classList.remove('active');
     overlay.classList.remove('active');
     document.body.style.overflow = 'auto';
-  }
+}
 
 mobileMenuBtn.addEventListener('click', openMobileMenu);
 closeBtn.addEventListener('click', closeMobileMenu);
@@ -27,14 +25,14 @@ overlay.addEventListener('click', closeMobileMenu);
 const mobileNavLinks = document.querySelectorAll('.mobile-nav-section a');
 mobileNavLinks.forEach(link => {
     link.addEventListener('click', closeMobileMenu);
-  });
+});
 
 // Close menu on escape key
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         closeMobileMenu();
-      }
-  });
+    }
+});
 
 // add projects dynamically
 
@@ -100,12 +98,13 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const projectsContainer = document.getElementById('projects-container');
+    const mobileProjectsContainer = document.getElementById('mobile-projects-container');
 
     projectsData.forEach((project, index) => {
+        // Desktop Version (existing code)
         const projectWrapper = document.createElement('div');
         projectWrapper.classList.add('main-project-wrapper', 'flex-container');
 
-        
         if ((index + 1) % 2 === 0) {
             projectWrapper.classList.add('flipped');
         }
@@ -149,15 +148,13 @@ document.addEventListener('DOMContentLoaded', () => {
         infoSide.appendChild(projectLinks);
         projectWrapper.appendChild(infoSide);
 
-        // Image Side (rest of your existing code to create imageSide)
+        // Image Side (existing code)
         const imageSide = document.createElement('div');
         imageSide.classList.add('image-side', 'flex-container', 'column');
         imageSide.style.gap = '1rem';
 
         const imageBackground = document.createElement('div');
         imageBackground.classList.add('image-background');
-        
-        // imageBackground.style.backgroundImage = `url(${project.imageBackground})`;
         imageSide.appendChild(imageBackground);
 
         const imageScrollContainer = document.createElement('div');
@@ -194,5 +191,87 @@ document.addEventListener('DOMContentLoaded', () => {
         projectWrapper.appendChild(imageSide);
 
         projectsContainer.appendChild(projectWrapper);
+
+        // Mobile Version (new code)
+        const mobileProjectWrapper = document.createElement('div');
+        mobileProjectWrapper.classList.add('mobile-project-wrapper');
+
+        // Mobile Project Title
+        const mobileProjectTitle = document.createElement('div');
+        mobileProjectTitle.classList.add('mobile-project-title');
+        mobileProjectTitle.textContent = project.title;
+        mobileProjectWrapper.appendChild(mobileProjectTitle);
+
+        // Mobile Project Keywords
+        const mobileProjectKeywords = document.createElement('div');
+        mobileProjectKeywords.classList.add('mobile-project-keywords');
+        mobileProjectKeywords.textContent = project.keywords;
+        mobileProjectWrapper.appendChild(mobileProjectKeywords);
+
+        // Mobile Project Year
+        const mobileProjectYear = document.createElement('div');
+        mobileProjectYear.classList.add('mobile-project-year');
+        mobileProjectYear.textContent = project.year;
+        mobileProjectWrapper.appendChild(mobileProjectYear);
+
+        // Mobile Image Background
+        const mobileImageBackground = document.createElement('div');
+        mobileImageBackground.classList.add('mobile-image-background');
+        mobileProjectWrapper.appendChild(mobileImageBackground);
+
+        // Mobile Pagination Elements
+        const mobilePaginationContainer = document.createElement('div');
+        mobilePaginationContainer.classList.add('mobile-pagination-container', 'flex-container');
+        mobilePaginationContainer.style.justifyContent = 'space-between';
+        mobilePaginationContainer.style.alignItems = 'center';
+
+        const mobilePaginationIndicator = document.createElement('div');
+        mobilePaginationIndicator.classList.add('mobile-pagination-indicator');
+        mobilePaginationIndicator.textContent = project.pagination;
+        mobilePaginationContainer.appendChild(mobilePaginationIndicator);
+
+        const mobileScrollArrowIcons = document.createElement('div');
+        mobileScrollArrowIcons.classList.add('mobile-scroll-arrow-icons', 'flex-container');
+        mobileScrollArrowIcons.style.gap = '1.5rem';
+
+        const mobileBackArrow = document.createElement('img');
+        mobileBackArrow.src = project.arrows.back;
+        mobileBackArrow.alt = 'back arrow';
+        mobileBackArrow.width = 20;
+        mobileBackArrow.height = 20;
+        mobileScrollArrowIcons.appendChild(mobileBackArrow);
+
+        const mobileForwardArrow = document.createElement('img');
+        mobileForwardArrow.src = project.arrows.forward;
+        mobileForwardArrow.alt = 'forward arrow';
+        mobileForwardArrow.width = 20;
+        mobileForwardArrow.height = 20;
+        mobileScrollArrowIcons.appendChild(mobileForwardArrow);
+
+        mobilePaginationContainer.appendChild(mobileScrollArrowIcons);
+        mobileProjectWrapper.appendChild(mobilePaginationContainer);
+
+        // Mobile Project Description
+        const mobileProjectDescription = document.createElement('div');
+        mobileProjectDescription.classList.add('mobile-project-description');
+        project.description.forEach(paragraphText => {
+            const p = document.createElement('p');
+            p.textContent = paragraphText;
+            mobileProjectDescription.appendChild(p);
+        });
+        mobileProjectWrapper.appendChild(mobileProjectDescription);
+
+        // Mobile Project Links
+        const mobileProjectLinks = document.createElement('div');
+        mobileProjectLinks.classList.add('mobile-project-links', 'flex-container');
+        project.links.forEach(link => {
+            const linkDiv = document.createElement('div');
+            linkDiv.classList.add('underline');
+            linkDiv.innerHTML = `<a href="${link.url}" target="_blank">${link.text}<img src="${link.icon}" alt="link icon" width="15px" height="15px"></a>`;
+            mobileProjectLinks.appendChild(linkDiv);
+        });
+        mobileProjectWrapper.appendChild(mobileProjectLinks);
+
+        mobileProjectsContainer.appendChild(mobileProjectWrapper);
     });
 });
