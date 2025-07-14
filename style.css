@@ -353,13 +353,14 @@ td:nth-child(2) {
 }
 
 .project-key-words {
-    font-weight: 300;
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 0.95rem;
 }
 
 .project-description {
     font-size: 1rem;
     color: #969696;
+    line-height: 170%;
 }
 
 .project-links {
