@@ -154,7 +154,7 @@ section {
     background-color: #969696;
     border: none;
     margin-top: 1.5rem;
-    opacity: 60%;
+    opacity: 50%;
 
   }
 
@@ -807,9 +807,6 @@ td:nth-child(2) {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2rem 5% 3rem 5%;
-    border-bottom: 1px solid #969696;
-    opacity: 0.6;
 }
 
 .mobile-project-wrapper:last-child {
@@ -846,15 +843,11 @@ td:nth-child(2) {
 /* Mobile Image Background */
 .mobile-image-background {
     background-color: black;
-    height: 200px;
+    height: 300px;
     width: 100%;
-    border-radius: 4px;
 }
 
-/* Mobile Pagination Container */
-.mobile-pagination-container {
-    padding: 1rem 0;
-}
+
 
 /* Mobile Pagination Indicator */
 .mobile-pagination-indicator {
@@ -884,11 +877,12 @@ td:nth-child(2) {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding-top: 1rem;
 }
 
-.mobile-project-description p {
+.mobile-project-description > p {
     font-family: "Inter", sans-serif;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #969696;
     line-height: 1.6;
@@ -934,8 +928,14 @@ td:nth-child(2) {
     
     /* Adjust mobile project wrapper spacing */
     .mobile-project-wrapper {
-        padding: 2rem 0 3rem 0;
+        padding: 5%;
     }
+
+    .mobile-image-background {
+    margin-left: -6%;
+    margin-right: -7%;
+    width: calc(100% + 12%);
+}
     
     /* Responsive adjustments for very small screens */
     @media (max-width: 480px) {
@@ -949,11 +949,11 @@ td:nth-child(2) {
         }
         
         .mobile-image-background {
-            height: 180px;
+            height: 250px;
         }
         
         .mobile-project-description p {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
         
         .mobile-project-links {
