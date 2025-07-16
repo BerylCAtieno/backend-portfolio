@@ -421,7 +421,7 @@ td:nth-child(2) {
     }
 
     .main-experience-info:last-of-type {
-        padding-bottom: 15%;
+        padding-bottom: 20%;
     }
 
     .experience-details {
@@ -490,7 +490,7 @@ td:nth-child(2) {
   }
 
   .about-info-wrapper {
-    padding-bottom: 20%;
+    padding-bottom: 25%;
   }
 
   .about-info-wrapper,
