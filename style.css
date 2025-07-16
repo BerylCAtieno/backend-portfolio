@@ -420,6 +420,10 @@ td:nth-child(2) {
         flex-direction: column; /* Stacks children vertically on mobile */
     }
 
+    .main-experience-info:last-of-type {
+        padding-bottom: 15%;
+    }
+
     .experience-details {
         order: 3; /* Moves the table to the end */
         width: 100%; /* Ensures the table takes full width on mobile */
@@ -482,6 +486,10 @@ td:nth-child(2) {
     max-width: 90%;
     font-size: 1rem;
     margin-left: 5%;
+  }
+
+  .about-info-wrapper {
+    padding-bottom: 20%;
   }
 
   .about-info-wrapper,
